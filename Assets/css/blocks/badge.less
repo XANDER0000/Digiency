@@ -1,0 +1,38 @@
+// main: ../style.less
+
+.badge {
+    margin: 50px 0;
+
+    @media @mobile-supersm {
+        margin: 5px 0;
+    }
+}
+
+.badge__wrapper {
+    max-height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media @mobile-sm {
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: center;
+    }
+}
+
+.badge__item {
+    @media @tablet {
+        margin: 15px;
+    }
+}
+
+.badge__item_img {
+    width: 100%;
+    height: auto;
+
+    @media @mobile-supersm {
+        max-width: 67px;
+        max-height: 53px;
+    }
+}

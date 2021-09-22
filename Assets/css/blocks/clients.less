@@ -1,0 +1,134 @@
+// main: ../style.less
+
+.clients {
+    margin: 50px 0;
+    padding: 60px 0;
+}
+
+.clients__slider_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media @mobile-supersm {
+        padding: 40px 0 0 0;
+    }
+}
+
+.clients__slider_item {
+    position: relative;
+    background-color: #FF5300;
+    box-shadow: 0px 4px 10px rgba(rgb(8, 3, 3), 0.1);
+    max-width: 470px;
+
+
+    padding: 34px 35px 25px 65px;
+    margin: 0 70px 20px 0;
+    color: @white;
+
+    @media @mobile-supersm {
+        padding: 65px 25px 35px 25px;
+    }
+
+    @media @mobile-supersm {
+        margin: 0 20px 70px 0;
+    }
+}
+
+.clients__slider_avatar {
+    position: absolute;
+    overflow: visible;
+    top: 25px;
+    left: -40px;
+
+    @media @mobile-supersm {
+        top: -40px;
+        left: 0;
+        right: 0;
+    }
+}
+
+.clients__slider_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.clients__slider_name {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 123.6%;
+    margin-bottom: 5px;
+}
+
+.clients__slider_prof {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150.6%;
+    margin-bottom: 20px;
+}
+
+.clients__slider_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150.6%;
+
+    overflow-y: auto;
+    max-height: 145px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    position: absolute;
+    bottom: -50px;
+    padding-bottom: 20px;
+    left: 0;
+    z-index: 2;
+
+
+    li {
+        margin: 0 5px;
+
+        &.slick-active
+        button {
+            background-color: #FF5300;
+        }
+
+    }
+
+    button {
+        width: 15px;
+        height: 15px;
+
+        padding: 0;
+
+        border: 1px solid;
+        border-radius: 50%;
+        background: transparent;
+        background-color: #7B7B7B;
+
+        font-size: 0;
+        color: transparent;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+}
+
+

@@ -1,0 +1,89 @@
+// main: ../style.less
+
+.team {
+    margin: 40px 0;
+}
+
+.team__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-basis: 25%;
+
+    @media @notebook {
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: center;
+    }
+}
+
+.cards__profile {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 25px 10px;
+    cursor: pointer;
+
+    &:hover {
+        .team__social {
+            opacity: 1;
+        }
+    }
+}
+
+.cards__profile_photo {
+    margin-bottom: 25px;
+}
+
+.cards__profile_name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+
+.cards__profile_prof {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150.6%;
+    color:#7b7b7b;
+
+    margin-bottom: 15px;
+}
+
+.team__social {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    right: 0;
+    top: 35px;
+
+    transition: all .2s ease;
+}
+
+.team__social__link {
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding: 10px 0;
+    height: 50%;
+    min-width: 40px;
+    max-height: 40px;
+    background-color: @white;
+    color: #FF5300;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+
+    transition: all .2s ease;
+
+    &:hover {
+        background-color: #FF5300;
+        box-shadow: 0px 1px 5px rgba(#FF5300, 1);
+        color: @white;
+    }
+}

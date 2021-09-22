@@ -1,0 +1,154 @@
+// main: ../style.less
+
+.about {
+    margin: 120px 0;
+
+    @media @tablet{
+        margin: 90px 0;
+    }
+
+    @media @mobile {
+        margin: 50px 0;
+    }
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 570px;
+    z-index: 1;
+
+    @media @tablet{
+        max-width: 349px;
+    }
+
+    @media @mobile {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.about__subheading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150.6%;
+    margin-bottom: 25px;
+}
+
+.about__heading {
+    font-size: 39.06px;
+    font-weight: 600;
+    line-height: 123.6%;
+    max-width: 493px;
+    text-transform: capitalize;
+
+    span {
+        color: #FF5300;
+    }
+
+    @media @tablet{
+        font-size: 39.06px;
+        font-weight: 600;
+    }
+}
+
+.about__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150.6%;
+    max-width: 493px;
+
+    margin: 0 0 25px 0;
+
+    &--2 {
+        display: none;
+    }
+
+    @media @tablet {
+        display: none;
+
+        &--2 {
+            @media @tablet {
+                display: block;
+            }
+        }
+    }
+}
+
+.about__img {
+    @media @mobile {
+        display: none;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        max-width: 535px;
+    }
+
+    &--2 {
+        display: none;
+
+        @media @mobile {
+            display: block;
+        }
+    }
+}
+
+.about__img_img {
+    height: auto;
+    width: 100%;
+}
+
+.about__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 60px;
+    flex-basis: 25%;
+
+    @media @mobile {
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: center;
+    }
+}
+
+.about__cards__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    padding: 25px 31px 21px 31px;
+    margin: 0 10px 25px 10px;
+    max-width: 270px;
+    height: 270px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards__item__img {
+    margin-bottom: 25px;
+
+    @media @tablet {
+        margin-bottom: 15px;
+    }
+}
+
+.cards__item__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150.6%;
+}

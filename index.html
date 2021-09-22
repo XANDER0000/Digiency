@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiency</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+    <!-- SWITCHER -->
+    <link rel="stylesheet" title="theme" href="Assets/css/theme-light.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/15a267786d.js" crossorigin="anonymous"></script>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__body">
+
+            <div class="header__logo" data-scroll="#Home" data-color="dark">
+                <img class="header__logo__img" src="Assets/images/header/logo.svg" alt="logo">
+            </div>
+
+            <div class="header__logo" data-scroll="#Home"  data-color="light"">
+                <img class="header__logo__img" src="Assets/images/footer/logo2.svg" alt="logo">
+            </div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" data-scroll="#Home" href="">Home</a>
+                <a class="nav__link" data-scroll="#About" href="">About Us</a>
+                <a class="nav__link" data-scroll="#Works" href="">Our Work </a>
+                <a class="nav__link" data-scroll="#Clients" href="">Clients</a>
+                <a class="nav__link" data-scroll="#Blog" href="">Our Blog</a>
+                <a class="nav__link" data-scroll="#Contact" href="">Contact Us</a>
+            </nav>
+
+            <button class="switch" type="button" data-theme="dark" >
+                <img src="Assets/images/header/switch.svg" alt="">
+            </button>
+
+            <button style="display: none;" class="switch" type="button" data-theme="light">
+                <img src="Assets/images/header/switch-light.svg" alt="">
+            </button>
+
+            <button class="burger" type="button" id="navToggle" data-color="dark">
+                <img class="burger__img" src="Assets/images/header/burger.svg" alt="">
+            </button>
+
+            <button class="burger" type="button" id="navToggle_2" data-color="light">
+                <img class="burger__img" src="Assets/images/header/burger-light.svg" alt="">
+            </button>
+
+        </div><!--header__body -->
+    </div><!--container -->
+</header><!--header -->
+
+
+<div class="intro" id="Home">
+    <div class="container">
+
+        <div class="intro__wrapper">
+
+            <div class="intro__img intro__img--2">
+                <img class="intro__img_img" src="Assets/images/intro/img1.svg" alt="">
+            </div>
+
+            <div class="intro__content">
+                <div class="intro__heading">We Are The Best
+                    <span>Digital Agency</span> for
+                    business</div>
+                <div class="intro__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+
+                <div class="intro__text intro__text--2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. .</div>
+
+                <div>
+                    <button class="btn" type="button" id="">Contact Us</button>
+                </div>
+            </div>
+
+            <div class="intro__img">
+                <img class="intro__img_img" src="Assets/images/intro/img1.svg" alt="">
+            </div>
+        </div>
+
+        <div class="intro__social">
+            <a href=""><i class="fab fa-facebook-f intro__social__link"></i></a>
+            <a href=""><i class="fab fa-instagram intro__social__link"></i></a>
+            <a href=""><i class="fab fa-twitter intro__social__link"></i></a>
+            <a href=""><i class="fab fa-skype intro__social__link"></i></a>
+        </div>
+
+    </div><!--container -->
+</div><!--intro -->
+
+<div class="about" id="About">
+    <div class="container">
+
+        <div class="about__wrapper">
+
+            <div class="about__img">
+                <img class="about__img_img" src="Assets/images/about/img.svg" alt="">
+            </div>
+
+            <div class="about__content">
+                <div class="about__subheading">About Us</div>
+                <div class="about__heading">We Are
+                    <span>Making
+                        Ideas Better </span>For Everyone</div>
+                <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur imperdiet at a augue ullamcorper. Leo faucibus feugiat rutrum aenean. Nisi, lectus aliquet aliquam consectetur augue praesent. Lorem vulputate orci eget mi, sed pulvinar.
+
+                <p>Oetiam erat volutpat tempor fringilla mi. Elit a blandit faucibus est, dui interdum ut amet. Adipiscing feugiat vel at posuere in. Pellentesque volutpat vestibulum.</p>
+                </div>
+
+                <div class="about__text about__text--2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. .</div>
+
+                <div>
+                    <button class="btn" type="button" id="">Contact Us</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="about__cards">
+            <div class="about__cards__item">
+                <div class="cards__item__img">
+                    <img src="Assets/images/about/icon1.svg" alt="">
+                </div>
+                <div class="cards__item__text">World leader in consulting
+                    and finance</div>
+            </div>
+
+            <div class="about__cards__item">
+                <div class="cards__item__img">
+                    <img src="Assets/images/about/icon2.svg" alt="">
+                </div>
+                <div class="cards__item__text">A focused team with a
+                    specialized skill</div>
+            </div>
+
+            <div class="about__cards__item">
+                <div class="cards__item__img">
+                    <img src="Assets/images/about/icon3.svg" alt="">
+                </div>
+                <div class="cards__item__text">Trusted and professional
+                    advisors for you</div>
+            </div>
+
+            <div class="about__cards__item">
+                <div class="cards__item__img">
+                    <img src="Assets/images/about/icon4.svg" alt="">
+                </div>
+                <div class="cards__item__text">Experience to give you a
+                    better results
+                </div>
+            </div>
+        </div>
+
+    </div><!--container -->
+</div><!--about -->
+
+<div class="expereince">
+    <div class="container">
+
+        <div class="expereince__wrapper">
+
+            <div class="expereince__content">
+                <div class="expereince__subheading">Our Expereince</div>
+                <div class="expereince__heading">We Have Completed <span>150+
+                    Projects</span> Succesfully</div>
+                <div class="expereince__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur imperdiet at a augue ullamcorper. Leo faucibus feugiat rutrum aenean. Nisi, lectus aliquet aliquam consectetur augue praesent. Lorem vulputate orci eget mi, sed pulvinar.
+
+                <p>Oetiam erat volutpat tempor fringilla mi. Elit a blandit faucibus est, dui interdum ut amet. Adipiscing feugiat vel at posuere in. Pellentesque volutpat vestibulum.</p>
+                </div>
+
+                <div class="expereince__text expereince__text--2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. .</div>
+
+                <div>
+                    <button class="btn" type="button" id="">Contact Us</button>
+                </div>
+            </div>
+
+            <div class="expereince__cards">
+                <div class="expereince__cards__item">
+                    <div class="cards__item__quantity">250+</div>
+                    <div class="cards__item__name">Global Customer</div>
+                </div>
+                <div class="expereince__cards__item">
+                    <div class="cards__item__quantity">50+</div>
+                    <div class="cards__item__name">Team Member</div>
+                </div>
+                <div class="expereince__cards__item expereince__cards__item">
+                    <div class="cards__item__quantity">156+</div>
+                    <div class="cards__item__name">Project Completed</div>
+                </div>
+                <div class="expereince__cards__item">
+                    <div class="cards__item__quantity">15+</div>
+                    <div class="cards__item__name">Our Company</div>
+                </div>
+            </div>
+        </div>
+    </div><!--container -->
+</div><!--expereince -->
+
+<div class="team">
+    <div class="container">
+
+        <div class="section__header">
+            <div class="section__header_subheading">Team Member</div>
+            <div class="section__header_heading">We Have <span>Some Awesome</span> People</div>
+        </div>
+
+        <div class="team__cards">
+            <div class="cards__profile">
+                <img class="cards__profile_photo" src="Assets/images/team/img1.png" alt="">
+                <div class="team__social">
+                    <a href=""><i class="fab fa-facebook-f team__social__link"></i></a>
+                    <a href=""><i class="fab fa-instagram team__social__link"></i></a>
+                    <a href=""><i class="fab fa-twitter team__social__link"></i></a>
+                    <a href=""><i class="fab fa-skype team__social__link"></i></a>
+                </div>
+                <div class="cards__profile_name">Gustavo Herwitz</div>
+                <div class="cards__profile_prof">UI/UX Designer</div>
+            </div>
+
+            <div class="cards__profile">
+                <img class="cards__profile_photo" src="Assets/images/team/img2.png" alt="">
+                <div class="team__social">
+                    <a href=""><i class="fab fa-facebook-f team__social__link"></i></a>
+                    <a href=""><i class="fab fa-instagram team__social__link"></i></a>
+                    <a href=""><i class="fab fa-twitter team__social__link"></i></a>
+                    <a href=""><i class="fab fa-skype team__social__link"></i></a>
+                </div>
+                <div class="cards__profile_name">Phillip Curtis</div>
+                <div class="cards__profile_prof">Graphic Designer</div>
+            </div>
+
+            <div class="cards__profile">
+                <img class="cards__profile_photo" src="Assets/images/team/img3.png" alt="">
+                <div class="team__social">
+                    <a href=""><i class="fab fa-facebook-f team__social__link"></i></a>
+                    <a href=""><i class="fab fa-instagram team__social__link"></i></a>
+                    <a href=""><i class="fab fa-twitter team__social__link"></i></a>
+                    <a href=""><i class="fab fa-skype team__social__link"></i></a>
+                </div>
+                <div class="cards__profile_name">Talan Torff</div>
+                <div class="cards__profile_prof">Web Developer</div>
+            </div>
+
+            <div class="cards__profile">
+                <img class="cards__profile_photo" src="Assets/images/team/img4.png" alt="">
+                <div class="team__social">
+                    <a href=""><i class="fab fa-facebook-f team__social__link"></i></a>
+                    <a href=""><i class="fab fa-instagram team__social__link"></i></a>
+                    <a href=""><i class="fab fa-twitter team__social__link"></i></a>
+                    <a href=""><i class="fab fa-skype team__social__link"></i></a>
+                </div>
+                <div class="cards__profile_name">Abram Vaccaro</div>
+                <div class="cards__profile_prof">App Developer</div>
+            </div>
+        </div><!--team__cards -->
+
+    </div><!--container -->
+</div><!--team -->
+
+<div class="works" id="Works">
+    <div class="container">
+
+        <div class="section__header">
+            <div class="section__header_subheading">Our Work</div>
+            <div class="section__header_heading">We Have Some
+                <span>Designed & Developmentw</span> Projects</div>
+            <div class="works__header_cat">
+                <a class="works__cat_link" data-filter="all" href="">All</a>
+                <a class="works__cat_link" data-filter="Graphic Design" href="">Graphic Design</a>
+                <a class="works__cat_link" data-filter="UI/UX Design" href="">UI/UX Design</a>
+                <a class="works__cat_link" data-filter="Web Development" href="">Web Development</a>
+            </div>
+        </div>
+
+        <div class="works__cards">
+            <div class="works__cards_item" data-cat="UI/UX Design">
+                <img class="works__cards_img works__cards_img--sm" src="Assets/images/works/img1.png" alt="">
+                <div class="cards__info">
+                    <div>
+                        <img class="cards__info__img" src="Assets/images/works/search.svg" alt="">
+                    </div>
+                    <div><a class="cards__info__heading" href="">Latest work</a></div>
+                    <div class="cards__info_cat">UI/UX Design</div>
+                </div>
+            </div>
+            <div class="works__cards_item" data-cat="UI/UX Design">
+                <img class="works__cards_img" src="Assets/images/works/img5.png" alt="">
+                <div class="cards__info">
+                    <div>
+                        <img class="cards__info__img" src="Assets/images/works/search.svg" alt="">
+                    </div>
+                    <div><a class="cards__info__heading" href="">Latest work</a></div>
+                    <div class="cards__info_cat">UI/UX Design</div>
+                </div>
+            </div>
+            <div class="works__cards_item" data-cat="Graphic Design">
+                <img class="works__cards_img works__cards_img--sm" src="Assets/images/works/img3.png" alt="">
+                <div class="cards__info">
+                    <div>
+                        <img class="cards__info__img" src="Assets/images/works/search.svg" alt="">
+                    </div>
+                    <div><a class="cards__info__heading" href="">Latest work</a></div>
+                    <div class="cards__info_cat">UI/UX Design</div>
+                </div>
+            </div>
+            <div class="works__cards_item" data-cat="Web Development">
+                <img class="works__cards_img" src="Assets/images/works/img4.png" alt="">
+                <div class="cards__info">
+                    <div>
+                        <img class="cards__info__img" src="Assets/images/works/search.svg" alt="">
+                    </div>
+                    <div><a class="cards__info__heading" href="">Latest work</a></div>
+                    <div class="cards__info_cat">UI/UX Design</div>
+                </div>
+            </div>
+            <div class="works__cards_item" data-cat="Graphic Design">
+                <img class="works__cards_img works__cards_img--sm" src="Assets/images/works/img2.png" alt="">
+                <div class="cards__info">
+                    <div>
+                        <img class="cards__info__img" src="Assets/images/works/search.svg" alt="">
+                    </div>
+                    <div><a class="cards__info__heading" href="">Latest work</a></div>
+                    <div class="cards__info_cat">UI/UX Design</div>
+                </div>
+            </div>
+            <div class="works__cards_item" data-cat="Web Development">
+                <img class="works__cards_img" src="Assets/images/works/img6.png" alt="">
+                <div class="cards__info">
+                    <div>
+                        <img class="cards__info__img" src="Assets/images/works/search.svg" alt="">
+                    </div>
+                    <div><a class="cards__info__heading" href="">Latest work</a></div>
+                    <div class="cards__info_cat">UI/UX Design</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!--container -->
+</div><!--works -->
+
+<div class="clients" id="Clients">
+    <div class="container">
+
+        <div class="section__header">
+            <div class="section__header_subheading">Clients Feedback</div>
+            <div class="section__header_heading">Some <span>Great
+                 Words</span> From Our Clients</div>
+        </div>
+
+        <div class="clients__slider" data-slider>
+
+            <div>
+                <div class="clients__slider_wrapper">
+                    <div class="clients__slider_item">
+                        <div class="clients__slider_avatar">
+                            <img class="clients__slider_img" src="Assets/images/clients/img1.png" alt="">
+                        </div>
+                        <div class="clients__slider_name">Justin Septimus</div>
+                        <div class="clients__slider_prof">CEO,word yt</div>
+                        <div class="clients__slider_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis adipiscing. </div>
+                    </div>
+
+                    <div class="clients__slider_item">
+                        <div class="clients__slider_avatar">
+                            <img class="clients__slider_img" src="Assets/images/clients/img2.png" alt="">
+                        </div>
+                        <div class="clients__slider_name">Ashlynn Gouse</div>
+                        <div class="clients__slider_prof">Managing Director</div>
+                        <div class="clients__slider_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis adipiscing.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="clients__slider_wrapper">
+                    <div class="clients__slider_item">
+                        <div class="clients__slider_avatar">
+                            <img class="clients__slider_img" src="Assets/images/clients/img2.png" alt="">
+                        </div>
+                        <div class="clients__slider_name">Ashlynn Gouse</div>
+                        <div class="clients__slider_prof">Managing Director</div>
+                        <div class="clients__slider_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis adipiscing.</div>
+                    </div>
+                    <div class="clients__slider_item">
+                        <div class="clients__slider_avatar">
+                            <img class="clients__slider_img" src="Assets/images/clients/img1.png" alt="">
+                        </div>
+                        <div class="clients__slider_name">Justin Septimus</div>
+                        <div class="clients__slider_prof">CEO,word yt</div>
+                        <div class="clients__slider_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis adipiscing. </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="clients__slider_wrapper">
+                    <div class="clients__slider_item">
+                        <div class="clients__slider_avatar">
+                            <img class="clients__slider_img" src="Assets/images/clients/img1.png" alt="">
+                        </div>
+                        <div class="clients__slider_name">Justin Septimus</div>
+                        <div class="clients__slider_prof">CEO,word yt</div>
+                        <div class="clients__slider_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis adipiscing. </div>
+                    </div>
+
+                    <div class="clients__slider_item">
+                        <div class="clients__slider_avatar">
+                            <img class="clients__slider_img" src="Assets/images/clients/img2.png" alt="">
+                        </div>
+                        <div class="clients__slider_name">Ashlynn Gouse</div>
+                        <div class="clients__slider_prof">Managing Director</div>
+                        <div class="clients__slider_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis adipiscing.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--clients__slider -->
+
+    </div><!--container -->
+</div><!--clients -->
+
+<div class="blog" id="Blog">
+    <div class="container">
+
+        <div class="section__header">
+            <div class="section__header_subheading">Our Blog</div>
+            <div class="section__header_heading">Our Latest <span>Blogs
+                Will Keep</span> Everyone Updated</div>
+        </div>
+
+        <div class="blog__slider" data-slider>
+
+            <div>
+                <div class="blog__slider_wrapper">
+                    <div class="blog__slider_item">
+                        <div class="blog__slider_prof">Graphic Design</div>
+                        <div class="blog__slider_textdiv">
+                            <a href="" class="blog__slider_text">35 Stellar Graphic
+                            Design Blogs to Keep You
+                            Educated and Inspired</a>
+                        </div>
+
+                        <div class="blog__slider__profile">
+                            <div class="profile__ava">
+                                <img class="profile__ava__img" src="Assets/images/blog/ava1.png" alt="">
+                            </div>
+                            <div class="profile__info">
+                                <div>
+                                    <a href="" class="profile__name">Cristofer Westervelt</a>
+                                </div>
+                                <div class="profile__wrapper">
+                                    <div class="profile__date">January 25, 2021</div>
+                                    <div class="profile__time">5 min Read</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog__slider__img">
+                            <img class="blog__slider__img_img" src="Assets/images/blog/img1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="blog__slider_item">
+                        <div class="blog__slider_prof">Managing Director</div>
+                        <div class="blog__slider_textdiv">
+                            <a href="" class="blog__slider_text">Ridiculously powerful
+                                2021 iPad Pro may drop this
+                                month</a>
+                        </div>
+
+                        <div class="blog__slider__profile">
+                            <div class="profile__ava">
+                                <img class="profile__ava__img" src="Assets/images/blog/ava2.png" alt="">
+                            </div>
+                            <div class="profile__info">
+                                <div>
+                                    <a href="" class="profile__name">Haylie Mango</a>
+                                </div>
+                                <div class="profile__wrapper">
+                                    <div class="profile__date">January 25, 2021</div>
+                                    <div class="profile__time">5 min Read</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog__slider__img">
+                            <img class="blog__slider__img_img" src="Assets/images/blog/img2.png" alt="">
+                        </div>
+                    </div>
+                </div><!-- blog__slider_wrapper -->
+            </div>
+
+            <div>
+                <div class="blog__slider_wrapper">
+                    <div class="blog__slider_item">
+                        <div class="blog__slider_prof">Graphic Design</div>
+                        <div class="blog__slider_textdiv">
+                            <a href="" class="blog__slider_text">35 Stellar Graphic
+                            Design Blogs to Keep You
+                            Educated and Inspired</a>
+                        </div>
+
+                        <div class="blog__slider__profile">
+                            <div class="profile__ava">
+                                <img class="profile__ava__img" src="Assets/images/blog/ava1.png" alt="">
+                            </div>
+                            <div class="profile__info">
+                                <div>
+                                    <a href="" class="profile__name">Cristofer Westervelt</a>
+                                </div>
+                                <div class="profile__wrapper">
+                                    <div class="profile__date">January 25, 2021</div>
+                                    <div class="profile__time">5 min Read</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog__slider__img">
+                            <img class="blog__slider__img_img" src="Assets/images/blog/img1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="blog__slider_item">
+                        <div class="blog__slider_prof">Managing Director</div>
+                        <div class="blog__slider_textdiv">
+                            <a href="" class="blog__slider_text">Ridiculously powerful
+                                2021 iPad Pro may drop this
+                                month</a>
+                        </div>
+
+                        <div class="blog__slider__profile">
+                            <div class="profile__ava">
+                                <img class="profile__ava__img" src="Assets/images/blog/ava2.png" alt="">
+                            </div>
+                            <div class="profile__info">
+                                <div>
+                                    <a href="" class="profile__name">Haylie Mango</a>
+                                </div>
+                                <div class="profile__wrapper">
+                                    <div class="profile__date">January 25, 2021</div>
+                                    <div class="profile__time">5 min Read</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog__slider__img">
+                            <img class="blog__slider__img_img" src="Assets/images/blog/img2.png" alt="">
+                        </div>
+                    </div>
+                </div><!-- blog__slider_wrapper -->
+            </div>
+        </div><!--blog__slider -->
+
+    </div><!--container -->
+</div><!--blog -->
+
+<div class="contact" id="Contact">
+    <div class="container">
+
+        <div class="section__header">
+            <div class="section__header_subheading">Contact Us</div>
+            <div class="section__header_heading">Feel <span>Free
+                to Contact</span> With Us</div>
+        </div>
+
+        <div class="contact__wrapper">
+            <div class="contact__item">
+                <div class="contact__header">
+                    <div class="contact__header__logo">
+                        <img class="contact__header__logo_img" src="Assets/images/contact/img1.png" alt="">
+                    </div>
+                    <div class="contact__header__info">
+                        <div class="contact__header__heading">Drop a line</div>
+                        <div class="contact__header__subheading">Mail Us</div>
+                    </div>
+                </div>
+
+                <div class="contact__info">
+                    <div class="contact__info__mail">Support87@gmial.com</div>
+                    <div class="contact__info__mail">ijkuiu874@gmial.com</div>
+                </div>
+            </div>
+
+            <div class="contact__item">
+                <div class="contact__header">
+                    <div class="contact__header__logo">
+                        <img class="contact__header__logo_img" src="Assets/images/contact/img2.png" alt="">
+                    </div>
+                    <div class="contact__header__info">
+                        <div class="contact__header__heading">24/7 Service</div>
+                        <div class="contact__header__subheading">Call Us</div>
+                    </div>
+                </div>
+
+                <div class="contact__info">
+                    <div class="contact__info__phone contact__info__phone--1">+880 265 98745</div>
+                    <div class="contact__info__phone">+895 855 85589</div>
+                </div>
+            </div>
+
+            <div class="contact__item">
+                <div class="contact__header">
+                    <div class="contact__header__logo">
+                        <img class="contact__header__logo_img" src="Assets/images/contact/img3.png" alt="">
+                    </div>
+                    <div class="contact__header__info">
+                        <div class="contact__header__heading">Location</div>
+                        <div class="contact__header__subheading">Visit Us</div>
+                    </div>
+                </div>
+
+                <div class="contact__info">
+                    <div class="contact__info__adress">158 ralegih sit,
+                        houston, yk 5896,uk
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!--container -->
+</div><!--contact -->
+
+<div class="message">
+    <div class="container">
+
+        <div class="section__header">
+            <div class="section__header_heading">Send Your <span>Message To Us</span></div>
+        </div>
+
+        <div class="message__wrapper">
+            <div class="message__background">
+                <img class="message__background_img" src="Assets/images/message/img1.png" alt="">
+            </div>
+
+            <form class="message__form" action="/" method="POST">
+                <input class="form__input" name="" id="input-email" type="text" placeholder="Name"></input>
+
+                <input class="form__input" name="" id="input-email" type="text" placeholder="Email"></input>
+
+                <input class="form__input" name="" id="input-email" type="text" placeholder="Mobile No"></input>
+
+                <input class="form__input" name="" id="input-email" type="text" placeholder="Subject"></input>
+
+                <textarea class="form__input" placeholder="Send Massage" name="" id="" ></textarea>
+
+                <div class="form__btn">
+                    <button class="btn" type="button" id="">Send Massage</button>
+                </div>
+            </form>
+
+            <div class="form__btn form__btn--2">
+                <button class="btn" type="button" id="">Send Massage</button>
+            </div>
+        </div>
+
+    </div><!--container -->
+</div><!--message -->
+
+<div class="map">
+    <div class="container">
+        <iframe class="map__item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50607.00374921473!2d-122.3507353620887!3d37.55653075320491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9e60efa95545%3A0xfd8efcf42dcc1ba7!2z0KHQsNC9LdCc0LDRgtC10L4sINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1632234055723!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div><!--container -->
+</div><!-- map -->
+
+<div class="badge">
+    <div class="container">
+
+        <div class="badge__wrapper">
+            <div class="badge__item">
+                <img class="badge__item_img" src="Assets/images/badges/img1.svg" alt="">
+            </div>
+
+            <div class="badge__item">
+                <img class="badge__item_img" src="Assets/images/badges/img2.svg" alt="">
+            </div>
+
+            <div class="badge__item">
+                <img class="badge__item_img" src="Assets/images/badges/img3.svg" alt="">
+            </div>
+
+            <div class="badge__item">
+                <img class="badge__item_img" src="Assets/images/badges/img4.svg" alt="">
+            </div>
+        </div>
+
+    </div><!--container -->
+</div><!--Badge -->
+
+
+<div class="footer">
+    <div class="container">
+        <div class="footer__content">
+
+            <div class="footer__col">
+                <div data-scroll="#Home" class="footer__logo"><img src="Assets/images/footer/logo2.svg" alt=""></div>
+                <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum.</div>
+                <div class="footer__social">
+                    <a href=""><i class="fab fa-facebook-f footer__social__link"></i></a>
+                    <a href=""><i class="fab fa-instagram footer__social__link"></i></a>
+                    <a href=""><i class="fab fa-twitter footer__social__link"></i></a>
+                    <a href=""><i class="fab fa-skype footer__social__link"></i></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__heading">Company</div>
+                <div>
+                    <a class="footer__menu_link" href="">About Us</a>
+                </div>
+                <div>
+                    <a class="footer__menu_link" href="">Our Work</a>
+                </div>
+                <div>
+                    <a class="footer__menu_link" href="">Client</a>
+                </div>
+                <div>
+                    <a class="footer__menu_link" href="">Our Blog</a>
+                </div>
+                <div>
+                    <a class="footer__menu_link" href="">Contact US</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__heading">Sevices</div>
+                <div>
+                    <a class="footer__menu_link" href="">Graphic Design</a>
+                </div>
+                <div>
+                    <a class="footer__menu_link" href="">UI/UX Design</a>
+                </div>
+                <div>
+                    <a class="footer__menu_link" href="">Web Development</a>
+                </div>
+                <div>
+                    <a class="footer__menu_link" href="">App Development</a>
+                </div>
+                <div>
+                    <a class="footer__menu_link" href="">Web Hosting</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__heading">Newsletter</div>
+                <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet libero dis eget maecenas bibendum.</div>
+                <form class="footer__form" action="/" method="POST">
+                    <input class="footer__form__input" name="input-email" id="input-email" type="text" placeholder="info@gmail.com"></input>
+                    <div class="footer__form__icon">
+                        <img class="footer__form__icon_img" src="Assets/images/footer/send.svg" alt="">
+                    </div>
+                </form>
+            </div>
+
+        </div><!--footer__content -->
+    </div><!--container -->
+    <div class="footer__copyright">
+        <div class="footer__copyright_wrapper">
+            <div class="footer__copyright_text">Copyright 2021. All Right Reserved By Ojjomedia</div>
+            <div>
+                <img class="footer__copyright_img" data-scroll="#Home" src="Assets/images/footer/up.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+</div><!--footer -->
+
+<!-- Js -->
+<script src="Assets/js/app.js"></script>
+
+<!-- Slick -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+</html>

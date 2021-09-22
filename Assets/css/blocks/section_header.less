@@ -1,0 +1,41 @@
+// main: ../style.less
+
+.section__header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.section__header_subheading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150.6%;
+    margin-bottom: 25px;
+}
+
+.section__header_heading {
+    font-size: 39.06px;
+    font-weight: 600;
+    line-height: 123.6%;
+    margin-bottom: 30px;
+    max-width: 480px;
+    text-transform: capitalize;
+
+    span {
+        color: #FF5300;
+    }
+
+    @media @tablet{
+        font-size: 31.25px;
+        font-weight: 600;
+    }
+
+    @media @mobile-supersm {
+        font-size: 25px;
+        font-weight: 500;
+        max-width: none;
+    }
+}
